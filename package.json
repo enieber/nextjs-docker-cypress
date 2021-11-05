@@ -1,0 +1,23 @@
+{
+  "name": "next-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "release": "cross-env NODE_ENV=production next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "dev:docker": "docker-compose up nextjs",
+    "test:e2e": "docker-compose up e2e"
+  },
+  "dependencies": {
+    "next": "^12.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^8.7.0",
+    "cypress-axe": "^0.13.0"
+  }
+}
